@@ -1,0 +1,12 @@
+{% extends "_template.html" %}
+
+{% block title %}Scrolling Text Hopefully{% endblock %}
+
+{% block body %}
+    <h1>Scrolling Text</h1>
+    <div id="label">
+        {{ testString }}
+        <input id="inputbox" type="text"/>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='scrolling.js') }}"></script>
+{% endblock %}

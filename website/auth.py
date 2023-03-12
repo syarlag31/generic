@@ -14,3 +14,7 @@ def logout():
 @auth.route('/sign-up')
 def sign_up():
     return render_template('sign-up.html')
+
+@auth.route('/scrollingtext')
+def scrolling_text():
+    return render_template('textTest.html', testString="This is test sentence for you to type.")
